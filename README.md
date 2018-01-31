@@ -1,4 +1,4 @@
-# nl-design
+# id-design
 
 ##### A simple component library
 
@@ -89,4 +89,3 @@
  ReactDOM.render(<App />, document.getElementById('app'));
  
  ````
-# id-design
