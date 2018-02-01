@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/babel components --out-dir dist && cp -rf ./components/table/style ./dist/table/ && cp -rf ./components/pagination/style ./dist/pagination/",
+    "build": "node_modules/.bin/babel components --out-dir dist && cp -rf ./components/table/style ./dist/table/ && cp -rf ./components/pagination/style ./dist/pagination/ && cp -rf ./components/drag_verify/style ./dist/drag_verify/",
     "prepublish": "npm run build"
   },
   "author": "",

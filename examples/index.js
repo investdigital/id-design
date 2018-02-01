@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import  ReactDOM from 'react-dom';
 import {Table, Pagination} from 'nl-design';
 // import Table from '../components/table/table';
-// import Pagination from '../components/pagination/pagination'
+// import Pagination from '../components/pagination/pagination';
+import DragVerify from '../components/drag-verify/drag_verify';
 
 class App extends Component{
     constructor(){
@@ -13,6 +14,9 @@ class App extends Component{
     }
     delete(id){
         console.log(id);
+    }
+    onChange(value){
+        console.log(value);
     }
     render(){
         const columns = [{
@@ -76,6 +80,8 @@ class App extends Component{
             <div style={{width:"960px",margin:"auto"}}>
                 <Table columns={columns} dataSource={data} tableStyle={style.tableStyle} tableClass={style.tableProps} />
                 <Pagination defaultPageSize={8} total = {data1} />
+                <div style={{width:"300px"}}> <DragVerify onDrag={this.onChange.bind(this)}/></div>
+
             </div>
         );
     }
